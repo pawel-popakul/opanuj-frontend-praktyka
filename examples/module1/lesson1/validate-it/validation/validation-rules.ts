@@ -19,16 +19,9 @@ class ValidationRules {
     return value % 2 === 0;
   }
 
-  static inputValidationRules = [
-    ValidationRules.nonEmpty,
-    ValidationRules.isInteger,
-  ];
+  static inputValidationRules = [this.nonEmpty, this.isInteger];
 
-  static intValidationRules = [
-    ValidationRules.min(0),
-    ValidationRules.max(100),
-    ValidationRules.isEven,
-  ];
+  static intValidationRules = [this.min(0), this.max(100), this.isEven];
 }
 
 export default ValidationRules;
